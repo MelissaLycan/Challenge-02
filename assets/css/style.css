@@ -54,8 +54,8 @@ img{
     text-overflow: wrap;
     margin-left: 50px;
 }
-.card:hover {
-    transition: scale(1.1);
+background-image:hover {
+    image-rendering: scale(1.2);
 }
 main {
     margin: 0px 30px;
@@ -109,6 +109,13 @@ main {
     align-items: center;
 }
 
+.card:hover {
+    display:flex;
+    opacity: 0.6;
+    filter:alpha(opacity=60);
+    transform:scale(1.1);
+}
+
 .box-1 {
     background-image: url(https://usabilitygeek.com/wp-content/uploads/2017/07/ux-design-process-lead.jpg);
 }
@@ -134,7 +141,7 @@ main {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    margin-left: -46%;
+    margin-left: -450px;
 }
 .titlebox {
     display:flex;
@@ -157,13 +164,6 @@ footer {
 }
 
 @media screen and (max-width: 960px) {
-
-    header,
-    main {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
     body {
         background-color: black;
         color: var(--light);
@@ -182,6 +182,7 @@ footer {
         padding: 10%;
     }
     .mobile {
+        display:block;
         min-height: 200px;
         min-width: 100%;
         text-align: center;
@@ -230,21 +231,12 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-header,
-main {
-        display:flex;
-        flex-wrap: wrap;
-    }
+
 body {
     background-color: black;
     color: var(--light);
 }
 
-section {
-        display: flex;
-        flex-direction: column;
-        padding-right: 0;
-    }
 .box {
     margin-top:5%;
     margin-left: 0%;
@@ -283,24 +275,10 @@ section {
 }
 
 @media screen and (max-width: 360px) {
-
-    header,
-    main {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
     body {
         background-color: black;
         color: var(--light);
     }
-
-    section {
-        display: flex;
-        flex-direction: column;
-        padding-right: 0;
-    }
-
     .box {
         margin-top: 5%;
         margin-left: 0%;
@@ -337,4 +315,10 @@ section {
     .card {
         width: 100%;
     }
+}
+
+@media screen and (min-width: 961px) {
+    .mobile {
+    display: none;
+}
 }
