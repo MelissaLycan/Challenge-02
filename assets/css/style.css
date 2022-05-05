@@ -8,8 +8,6 @@ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
     font-size: 20px;
 }
 
@@ -18,12 +16,14 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: var(--dark);
-    height: 100px;
+    height: 130px;
     width: 100%;
 }
 
+
 nav ul{
     display:flex;
+    flex-wrap: wrap;
     padding:13px;
     margin: 3px;
     color: aliceblue;
@@ -31,8 +31,12 @@ nav ul{
     background-color: var(--dark);
 }
 
+li {
+    padding:1%;
+    min-width: 150px;
+}
+
 a {
-    display:flex;
     text-decoration: none;
     margin-right: 5px;
 }
@@ -43,7 +47,6 @@ h1 {
 }
 
 img{
-    display:flex;
     min-width: 250px;
     min-height: 250px;
     max-width: 300px;
@@ -66,10 +69,8 @@ main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    position: relative;
     margin-left: 25%;
     padding:5%;
-    border: 2px solid var(--dark);
     width:75%;
     align-items: right;
 }
@@ -80,10 +81,11 @@ main {
     background-image: url(https://www.bigdataframework.org/wp-content/uploads/2019/11/2.jpg);
     width:100%;
     padding-left:30px;
-    padding-bottom: -20px;
     border: 2px solid var(--dark);
     min-height:300px;
     align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .box-main .titlebox{
     margin-bottom: -245px;
@@ -107,8 +109,15 @@ main {
     width:47%;
     min-height: 200px;
     align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
+.box-main:hover {
+    display:flex;
+    opacity: 0.6;
+    filter:alpha(opacity=60);
+    transform:scale(1.1);
+}
 .card:hover {
     display:flex;
     opacity: 0.6;
@@ -136,12 +145,11 @@ main {
     flex-direction:column;
     font-size: 36px;
     min-width:250px;
-    min-height: 0px;
+    max-width:33%;
     position:absolute;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    margin-left: -450px;
+    margin-left: -400px;
 }
 .titlebox {
     display:flex;
@@ -180,6 +188,7 @@ footer {
         margin-left: 0%;
         width: 100%;
         padding: 10%;
+        border: 2px solid var(--dark);
     }
     .mobile {
         display:block;
@@ -201,6 +210,7 @@ footer {
         margin-left: 20%;
         margin-top: -15%;
         padding: 2%;
+        border-radius: 10px;
     }
 
     .titlebox {
