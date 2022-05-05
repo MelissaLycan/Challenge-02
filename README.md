@@ -4,6 +4,8 @@
 
 This is the README.md file for Challenge 2 in Advanced CSS
 
+Live  https://melissalycan.github.io/Challenge-02/
+
 During this challenge I was tasked with building from scratch all of the semantic code and css to build my own portfolio.
 
 I used semantic html tags to build the page.  
